@@ -93,7 +93,7 @@ class MainActivity : AppCompatActivity(), LifecycleObserver {
         dessertTimer = DessertTimer(this.lifecycle)
 
         if (savedInstanceState != null) {
-            dessertTimer.secondsCount = savedInstanceState?.getInt(KEY_SECONDS_COUNT, 0)
+            dessertTimer.secondsCount = savedInstanceState.getInt(KEY_SECONDS_COUNT, 0)
         }
     }
 
